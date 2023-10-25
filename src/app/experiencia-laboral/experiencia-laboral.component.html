@@ -1,0 +1,30 @@
+<!--<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      SkelettonAPP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<div *ngIf="selectedSegment === 'explab'">
+  <ion-item>
+    <ion-input #inputempresa label="Empresa" [(ngModel)]="exp.empresa"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input #inputano_inicio label="Año Inicio" [(ngModel)]="exp.ano_inicio"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Trabajando Actualmente" [(ngModel)]="exp.trabajando"></ion-input>
+    <ion-select placeholder="Seleccione una opción" [(ngModel)]="exp.trabajando">
+      <ion-select-option *ngFor="let exp of trabaja" [value]="exp.id">{{exp.tra}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Año Termino" value="YYYY" [disabled]="true"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input #inputcargo label="cargo" [(ngModel)]="exp.cargo"></ion-input>
+  </ion-item>    
+</div>-->
